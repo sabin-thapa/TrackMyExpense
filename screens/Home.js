@@ -17,7 +17,7 @@ const Home = () => {
     <View style={{ flex: 1, backgroundColor: COLORS.lightGray2 }}>
       <NavBar />
       <Header />
-      <CategoryHeader />
+      <CategoryHeader categories={categories}/>
 
       <ScrollView contentContainerstyle={{ paddingBottom: 60 }}>
         {mode == "menu" && <CategoryList categories={categories} />}
